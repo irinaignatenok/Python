@@ -1,0 +1,40 @@
+body{
+    background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/13/Thor-EndgameProfile.jpg/revision/latest?cb=20190423174911");
+    background-size: cover;
+}
+img{
+    width: 100px;
+}
+nav ul li{
+    display: inline-block;
+    padding: 10px;
+    color: cornsilk;
+    margin-right: 20px;
+   
+   
+}
+nav ul{
+    text-align: right;
+}
+h1{
+    text-align: right;
+    margin-right: 30px;
+    color: rgb(238, 211, 102);
+    margin-top: 70px;
+    font-size: xx-large;
+}
+p {
+    color: rgb(242, 226, 164);
+    text-align: right;
+    margin-top: 50px;
+
+}
+#info{
+    text-align: center;
+    width: 25%;
+}
+a{
+    color: cyan;
+    font-size: medium;
+    margin-bottom: 20px;
+}

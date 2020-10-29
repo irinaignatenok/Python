@@ -1,0 +1,19 @@
+h1 {
+    color: blueviolet
+}
+h1,h6 {
+    border:2px solid purple;
+}
+ul li{
+    color: blue;
+    list-style: none;
+}
+#photo{
+    width: 200px;
+    height: 200px;
+}
+body{
+    text-align: center;
+    font-size: large;
+}
+
