@@ -1,0 +1,229 @@
+/* * {
+    box-sizing: border-box;
+} */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+    font-family: "Raleway";
+    
+
+}
+.navHeader {
+   position: relative; 
+   width: 80%;
+}
+.parentDiv{ 
+position: relative;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+height: 100%;
+width: 100%;
+opacity: .5;
+transition: .5s ease;
+background-image:  url("./headerback.jpg");
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+
+}
+
+.parentDiv h1 {
+    margin-top: 200px;
+    color:rgb(240, 120, 29, 1);
+    margin-left: 300px;
+    width:500px;
+    position: absolute;
+    margin-bottom: 200px;
+    opacity: 1; 
+}
+.parentDiv p {
+    color: rgb(73, 71, 71);
+    margin-left: 300px;
+    width:500px;
+    position: absolute;
+    margin-top: 300px;
+    margin-bottom: 15px;
+}
+.btn {
+background-color: rgb(240, 120, 29);
+border: none;
+border-radius: 5px;
+color: white;
+padding: 12px 30px;
+cursor: pointer;
+font-size: 20px;
+margin-left: 300px;
+margin-top: 415px;
+margin-bottom: 100px;
+}
+.btn-hover {
+    background-color: orange;
+}
+.aboutMe{
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.aboutMe h1 {
+    color: rgb(240, 120, 29, 1);
+}
+.aboutMe img{
+    border-radius: 100%;
+    margin-bottom: 15px;
+    width:400px;
+}
+#myPara {
+    text-align: center;
+}
+.cardAbout {
+   border-left: 4px solid teal;
+   width:500px;
+   margin-left: 100px;
+   text-align: center;
+   padding-left: 20px;
+   margin-top: 0px;
+}
+.portfolio {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    margin-left:100px ;
+}
+.portfolio h1{
+    color: rgb(240, 120, 29, 1);
+    margin-top: 100px;
+    
+}
+.portfolio img {
+width: 300px;
+height: 200px;
+margin:20px;
+padding: 15px;
+}
+.blog{
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    margin-left:100px ;
+}
+.blog img {
+width: 300px;
+height: 200px;
+margin:20px;
+padding: 15px;
+}
+.blog h1{
+    color: rgb(240, 120, 29, 1);
+    margin-top: 100px;
+}
+.ourTeam {
+/* display: inline-block; */
+text-align: center;
+width: 80%;
+margin-left:100px ;
+position: relative;
+}
+h1{
+color: rgb(240, 120, 29, 1);
+opacity: 1;
+}
+.imgHover {
+display: inline-block;
+width: 40%;
+height: auto;
+padding-left: auto;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+.container1 {
+    position: relative;
+    width: 100%;
+}
+.overlay1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 31%;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:  rgb(240, 120, 29, 1);
+  }
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 31%;
+    right: 0;
+    height: 100%;
+    width: 70%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:  rgb(240, 120, 29, 1);
+  }
+  .ourTeam:hover .overlay1 {
+    opacity: 0.6;
+  }
+  .ourTeam:hover .overlay2 {
+    opacity: 0.6;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .container1 {
+    position: relative;
+    width: 100%;
+}
+.getInTouch{
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin-left:100px ;
+}
+.inputArea {
+    display: block;
+    padding: 30px;
+}
+input{
+    margin: 10px;
+    width:50%;
+    height: 40px;
+}
+textarea{
+    margin: 10px;
+    width:50%;
+    height: 60px;
+}
+
+.btnSend {
+background-color: rgb(240, 120, 29);
+border: none;
+border-radius: 5px;
+color: white;
+padding: 12px 30px;
+cursor: pointer;
+font-size: 20px;
+/* margin-left: 100px; */
+margin-bottom: 100px;
+}
+.getInTouch h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+
