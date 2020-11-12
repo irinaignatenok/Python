@@ -1,0 +1,18 @@
+.cover {
+    background-image: url("./background.jpg");
+    background-size: cover;
+    height: 1000px;
+    width: 100%;
+}
+.navbar{
+    position: absolute;
+    margin-top: 20px;
+    width: 100%;
+    background-color: transparent !important;
+    margin:auto;
+
+}
+.navbar-nav{
+
+margin-left:auto;
+}

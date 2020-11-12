@@ -1,0 +1,21 @@
+body{
+    background-color: lightseagreen;
+}
+div{
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid black;
+    height: 50px;
+}
+.container{
+    width:500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.inputBox {
+    display: grid;
+    grid-row: 3/ 1;
+   
+}
