@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container {
+      width: 400px;
+      height: 400px;
+      position: relative;
+      background: yellow;
+    }
+    #animate {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: red;
+    }
+    #box {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      background: rgb(25, 0, 255);
+    }
+    .over {
+      border: 2px dashed #000;
+    }
+    </style>
+<body>
+    <p><button onclick="myMove()">Click Me</button></p>
+    <div id="container">
+      <div id="animate" draggable = "true"
+      ondragstart="dragStart(event)"></div>
+    </div>
+    <div id="box"
+    ondrop = "dragDrop(event)"
+    ondragover = "allowDrop(event)"
+    ondragenter= "allowEnter(event)"
+    ondragleave = "allowLeave(event)"></div>
+    <script src="script.js"></script>
+</body>
+</html>
