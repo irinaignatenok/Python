@@ -1,0 +1,25 @@
+CREATE TABLE employee (
+	id SERIAL PRIMARY KEY,
+    first_name VARCHAR(20) NOT NULL,
+	last_name VARCHAR(20) NOT NULL,
+	birthdate DATE,
+	employee_number SMALLINT UNIQUE NOT NULL,
+	monthly_salary INTEGER CHECK (monthly_salary > 500),
+	currently_working BOOLEAN
+);
+
+-- SELECT * FROM employees LIMIT 4
+-- SELECT last_name FROM employees ORDER BY last_name DESC
+-- SELECT * FROM employees WHERE first_name LIKE '%e%'
+-- SELECT * FROM employees WHERE currently_working  = True
+
+
+CREATE TABLE factory (
+id SERIAL PRIMARY KEY,
+country VARCHAR(50) UNIQUE NOT NULL,
+employee_working_id INTEGER,
+FOREIGN KEY (employee_working_id) REFERENCES employee (id))
+
+INSERT INTO factory (country, employee_working_id)
+-- VALUES('Israel', 1)
+VALUES ('Israel', (SELECT id from employee WHERE first_name = 'John'))
