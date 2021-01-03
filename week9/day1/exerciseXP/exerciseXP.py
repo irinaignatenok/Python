@@ -40,3 +40,26 @@ from datetime import datetime
 new_year = datetime(year = 2021, month = 1, day = 1, hour = 12)
 countdown = new_year - datetime.now()
 print(f"New year will come in {countdown} days")
+
+# Exercise 4
+from datetime import datetime
+date_today = datetime.now()
+new_year = datetime(year = 2021, month = 1, day = 1, hour = 00)
+print(new_year)
+holiday_coming = new_year - date_today
+print(f"Holiday coming in {holiday_coming}")
+
+# Exercise 5
+from datetime import datetime
+
+from datetime import datetime
+
+def minutes_of_life(birthdate):
+  date_today = datetime.now()
+  life_minutes = (date_today - birthdate)
+  return life_minutes
+
+birthdate = datetime(year = 1990, month = 9, day = 26, hour = 5)
+minutes_in_day = 1140
+number_of_minutes = minutes_of_life(birthdate)*minutes_in_day
+print(f"You have lived {number_of_minutes} in your entire life")
