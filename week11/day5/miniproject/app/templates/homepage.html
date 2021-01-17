@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content%}
+
+  {% for product in data%}
+  <p>{{product["Name"]}}
+  {% endfor %}
+
+
+{% endblock content%}

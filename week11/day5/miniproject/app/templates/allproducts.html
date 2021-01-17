@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% if title %}
+      <title>Product - {{title}}</title>
+    {% else %}
+      <title>Products page</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>
+      {% for product in data%}
+      <p>{{product["Name"]}}
+      {% endfor %}
+    </div>
+
+  </body>
+</html>

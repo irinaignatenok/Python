@@ -1,0 +1,98 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "brand": "nike",
+            "name": "air max",
+            "price" : 100,
+            "img": "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80"
+        },
+        {
+            "id": 2,
+            "brand": "adidas",
+            "name": "ultraboost",
+            "price" : 80,
+            "img": "https://images.unsplash.com/photo-1551116198-01d550c9809c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=641&q=80"
+        },
+        {
+           "id": 3,
+            "brand": "adidas",
+            "name": "pw solar",
+            "price" : 127,
+            "img": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=643&q=80"
+        },
+        {
+            "id": 4,
+            "brand": "new balance",
+            "name": "574 sport",
+            "price" : 55,
+            "img": "https://images.unsplash.com/photo-1559745206-ca4056293ddc?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+        }
+    ],
+      "stores": [
+        {
+            "city": "New York",
+            "shoes_available": [
+              { "id":1,
+                "num available" : 5,
+                "colors_available": ["blue", "red", "black"]
+              },
+              { "id":2,
+                "num available" : 0,
+                "color_available" :[]
+              },
+              { "id":3,
+                "num available" : 3,
+                "color_available" :["blue", "black"]
+              },
+              { "id":4,
+                "num available" : 0,
+                "color_available" :[]
+              }
+            ]
+        },
+        {
+            "city": "Paris",
+            "shoes_available": [
+              { "id":1,
+                "num available" : 10,
+                "colors_available": ["white", "pink/yellow", "grey"]
+              },
+              { "id":2,
+                "num available" : 5,
+                "colors_available": ["white", "black", "orange"]
+              },
+              { "id":3,
+                "num available" : 22,
+                "colors_available": ["blue", "red", "black"]
+              },
+              { "id":4,
+                "num available" : 0,
+                "color_available" :[]
+
+              }
+            ]
+        },
+       {
+            "city": "Tel Aviv",
+            "shoes_available": [
+              { "id":1,
+                "num available" : 0,
+                "color_available" :[]
+              },
+              { "id":2,
+                "num available" : 0,
+                "color_available" :[]
+              },
+              { "id":3,
+                "num available" : 18,
+                "colors_available": ["white", "pink/yellow", "grey"]
+              },
+              { "id":4,
+                "num available" : 2,
+                "colors_available": ["blue", "red", "black"]
+              }
+            ]
+        }
+    ]
+}

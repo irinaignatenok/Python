@@ -14,3 +14,11 @@ def random_number():
         i
 
 random_number()
+
+#Exercise 3 Generate random String of length 5
+import string
+import random
+def ranStr(chars = string.ascii_uppercase + string.ascii_lowercase, N=5):
+  return ''.join(random.choice(chars)for _ in range(N))
+
+print(ranStr())

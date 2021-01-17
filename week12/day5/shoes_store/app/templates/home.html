@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+
+{% block title %}Home{% endblock title %}
+{% block content %}
+
+<h2> Choose your location</h2>
+<form method = "POST" novalidate>
+  {{form.hidden_tag()}}
+  <p>
+    {{form.city.label}}
+    {{form.city()}}
+  </p>
+  <p>
+    {{form.submit()}}
+  </p>
+
+  {% endblock %}

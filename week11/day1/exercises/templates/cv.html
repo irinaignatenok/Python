@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CV</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/static/style.css"> -->
+  </head>
+    {% block body %}
+  <body style="background-color:wheat;">
+    <div class= "headers">
+        <img style = "width:100px; height:100px;"src="https://sun9-63.userapi.com/impf/c845523/v845523869/3a8c8/8eMhe4tvlwY.jpg?size=810x1080&quality=96&sign=5071fa2cad5ee8cbd6bc5133b3048f43&type=album" />
+        <h1>{{name}}</h1>
+    </div>
+    <div class="details">
+      <h2>My hobbies:</h2>
+      <ul>
+          <li>{{text}}</li>
+          <li>{{text}}</li>
+          <li>{{text}}</li>
+          <li>{{text}}</li>
+      </ul>
+      <br>
+      <h2>Skills:</h2>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+        <li>React</li>
+
+      </ul>
+      <br>
+      <h2>Strengths:</h2>
+      <ul>
+        <li>Creativity</li>
+        <li>Flexibility</li>
+        <li>Taking Initiative</li>
+        <li>Focused</li>
+
+      </ul>
+      <br>
+      <h2>Weaknesses:</h2>
+      <ul>
+        <li>Self-criticism</li>
+        <li>Too sensitive</li>
+
+      </ul>
+    </div>
+  </body>
+  {% endblock %}
+</html>

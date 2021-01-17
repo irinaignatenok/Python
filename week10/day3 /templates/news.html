@@ -1,0 +1,22 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Author: {{article['author']}}</p>
+    <p>Title: {{article['title']}}</p>
+    <p>Descriptoin: {{article['description']}}</p>
+    <p>Published at: {{article['publishedAt']}}</p>
+    <ul>
+      {% for article in articles %}
+        <div class="news-block">
+          <p class="news-title">{{article['title']}}</p>
+          <small>{{article['author']}}</small>
+
+        </div>
+      {% endfor %}
+    </ul>
+
+  </body>
+</html>

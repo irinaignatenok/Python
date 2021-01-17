@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Main{% endblock title %}
+
+{% block content %}
+<div class = "container">
+  <h3>Welcome to {{city}} Shoe Store</h3>
+  {% for shoe in products %}
+    <div class="card" style="width: 18rem;">
+      <img src="{{shoe['img']}}" class="card-img-top" alt="Shoe image">
+      <div class="card-body">
+        <h5 class="card-title">Name: {{shoe["name"]}} by {{shoe["brand"]}}</h5>
+        <h5 class="card-title">Brand: {{shoe["brand"]}}</h5>
+        <p class="card-text">Price: {{shoe['price']}}</p>
+        <form method = "POST" novalidate>
+            {{form1.hidden_tag()}}
+          <p>
+            {{form1.color.label}}
+            {{form1.color()}}
+          </p>
+          <p>
+            {{form1.size.label}}
+            {{form1.size()}}
+          </p>
+          <p>
+            {{form1.submit()}}
+          </p>
+      </form>
+      </div>
+  {% endfor %}
+
+
+
+
+
+
+</div>
+  {% endblock %}
+</div>
