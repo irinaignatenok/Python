@@ -1,0 +1,9 @@
+{% extends "base.html"%}
+{% block content%}
+{% for review in all_reviews %}
+<p>
+  {{review.name}}: <br>
+{{review.reviews}}
+</p><hr>
+{% endfor%}
+{%endblock%}

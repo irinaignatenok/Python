@@ -1,0 +1,16 @@
+body{
+  font-family: 'Fraunces', serif;
+  height: 700px;
+}
+
+. container .pictures {
+
+  display: inline-block;
+}
+.jumbotron{
+    padding-left: 80px;
+    margin-top: 20px;
+}
+.card {
+    border: none;
+}

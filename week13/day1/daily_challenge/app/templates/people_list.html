@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<form method = 'POST'>
+<ul>
+
+    {{form.name.label}}
+    <li>{{form.name()}}</li>
+    {{form.phone.label}}
+    <li> {{form.phone()}} </li>
+    <li>{{form.email.label}}</li>
+    <li>{{form.email()}}</li>
+    <li>{{form.address.label}}</li>
+    <li>{{form.address()}}</li>
+    <li>{{form.nationalities.label}}</li>
+    <li>{{form.nationalities()}}</li>
+    {{form.submit()}}<br>
+
+</ul>
+</form>
+{% endblock %}
