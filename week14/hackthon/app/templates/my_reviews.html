@@ -1,0 +1,14 @@
+{% extends "my_page.html" %}
+{%block title%}Reviews{% endblock %}
+{% block content %}
+{% for review in reviews %}
+<div style = "margin-left: 25px;">
+<p>
+
+  <h3>{{review.name}}</h3>
+  <h3>{{review.reviews}}</h3>
+  <button type="button" name="button" class="btn btn-secondary"><a href="/delete/{{review.id}}" style = "text-decoration: none; color:#d8f3f9;">Delete</a></button>
+</p>
+</div><hr>
+{% endfor %}
+{% endblock %}

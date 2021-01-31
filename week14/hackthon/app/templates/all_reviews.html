@@ -1,9 +1,13 @@
 {% extends "base.html"%}
+{%block title%}Reviews{% endblock %}
 {% block content%}
 {% for review in all_reviews %}
-<p>
-  {{review.name}}: <br>
+
+<p style = "margin-left: 25px;">
+{{review.name}}: <br>
 {{review.reviews}}
 </p><hr>
 {% endfor%}
+<button type="button" name="button" class="btn btn-secondary" style = "margin-left: 25px;"><a href="/reviews" style = "text-decoration: none; color:#d8f3f9;">Leave Feedback</a></button>
+
 {%endblock%}

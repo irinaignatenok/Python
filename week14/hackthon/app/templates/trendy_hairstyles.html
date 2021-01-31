@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{%block title%}Trendy hairstyles{% endblock %}
+{% block content %}
+<h3 style = "text-align: center;">Wedding hairstyles</h3>
+<div class = "pictures" style = "display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-gap: 15px;">
+
+<img src = "{{url_for('static', filename = "uploads/" + "2.jpg")}}" style = "width:300px; height:300px;">
+<img src = "{{url_for('static', filename = "uploads/" + "bride.jpg")}}" style = "width:300px; height:300px;">
+<img src = "{{url_for('static', filename = "uploads/" + "bride2.jpg")}}" style = "width:300px; height:300px;">
+<img src = "{{url_for('static', filename = "uploads/" + "bridal_hairstyle.jpg")}}" style = "width:300px; height:300px;">
+  <img src = "{{url_for('static', filename = "uploads/" + "8.jpg")}}" style = "width:300px; height:300px;">
+  <img src = "{{url_for('static', filename = "uploads/" + "hairstyle1.jpg")}}" style = "width:300px; height:300px;">
+  <img src = "{{url_for('static', filename = "uploads/" + "bride6.jpg")}}" style = "width:300px; height:300px;">
+  <img src = "{{url_for('static', filename = "uploads/" + "evening_hairstyle.jpg")}}" style = "width:300px; height:300px;">
+</div>
+{% endblock %}

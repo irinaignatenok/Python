@@ -1,0 +1,20 @@
+{% extends "my_page.html"%}
+{% block title%}My appointments{% endblock %}
+{% block content %}
+
+
+  {% for appointment in appointments%}
+  <div style = "margin-left: 25px;">
+  <p>
+
+    <h3>{{appointment.name}}</h3>
+    <h3>{{appointment.phone}}</h3>
+    <h3>{{appointment.date}}</h3>
+    <h3>{{appointment.description}}</h3>
+    <button type="button" name="button" class="btn btn-secondary"><a href="/delete-appointment/{{appointment.id}}" style = "text-decoration: none; color:#d8f3f9;">Delete</a></button>
+  </p>
+  </div><hr>
+  {% endfor %}
+
+
+{% endblock %}
